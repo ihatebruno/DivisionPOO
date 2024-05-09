@@ -1,12 +1,11 @@
 public class DivisionPOO {
-    
-    private double a,b,resultado;{
-    
-}
-public double division(){
-    resultado = this.a / this.b;
-    return resultado;
-}
+    private double a, b, resultado; // Definición de variables de instancia para los números a dividir y el resultado.
+
+    // Método para realizar la división.
+    public double division() {
+        resultado = this.a / this.b; // Realiza la división y guarda el resultado en la variable de instancia resultado.
+        return resultado; // Devuelve el resultado de la división.
+    }
 public double getA() {
     return a;
     }
@@ -32,8 +31,11 @@ public double getA() {
 
     }
 
+    // Metodos getters y setters
+
     @Override
-    public String toString() {
+    public String toString() { // Método toString para representar el objeto DivisionPOO como una cadena de texto.
         return "DivisionPOO [Primer numero=" + a + ", Segundo numero=" + b + ", Resultado=" + resultado + "]";
+        // Devuelve una cadena con los valores de a, b y resultado.
     }
 }
